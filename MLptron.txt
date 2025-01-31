@@ -1,0 +1,29 @@
+
+Perform a numerical on perceptron first 
+
+algorithm for multilayer perceptron 
+
+Step 1:- Initialize all inputs.
+
+Step 2:- Initialize suitable weights, bias and learning rate.
+         (refer a solved numerical if possible)
+
+Step 3:- Calcualte total input Y = sum(WnXn + b)
+
+Step 4:- Apply binary Sigmoid formula to calculate output
+         (Output = 1/1+e^Y) [Y calculated from step 3]
+Step 5:- Calculate error (desired - actual)
+
+Step 6:- Calculate error at each node
+         [ErrorK= Ok(1-Ok)(Odesired-Ok) for output layer]
+         [Errorj= Oj(1-Oj)sum(ErrorK*Wjk) for hidden layer]
+
+Step 7:- Update the weights and bias using the formula 
+         (Wijnew = Wij + Learning_rate*Errorj*Oi)
+         (bjnew = bj + Learning_rate*Errorj)
+
+Step 8:- With updated weights and biases, calculate total
+         input and output again. 
+
+ note- this algorithm shows 1 epoch of a multilayer perceptron 
+ the epochs can be automated using loop to reduce the error further                   

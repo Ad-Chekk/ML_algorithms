@@ -1,0 +1,22 @@
+Algorithm for Mp-neuron model
+
+Step 1:- Import required libraries and decide gate for the model.
+         (and, and-not, or, not) -> 1 layer
+         (xor) -> 2 layer (not possible with this algo)
+
+Step 2:- Initialize input and target and save it. (x1,x2,y)
+
+Step 3:- Ask for weights w1 and w2 from the user.
+
+Step 4:- create output list(Y) and compute target (Y=w1x1+w2x2)
+
+Step 5:- Ask threshold value from the user or compute using formula.
+
+Step 6:- Classify the values in output list(Y) according to threshold
+         and save it in actual output list.
+
+Step 7:- Check if your actual output matches with Target values,
+         if yes then print the weights else, use the formula 
+         Wnew = Wold + n(T-O)Xi to calculate new weights.
+
+

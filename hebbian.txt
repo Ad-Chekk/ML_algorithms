@@ -1,0 +1,24 @@
+Algorithm for hebbian Learning model
+Solve 1 hebbian numerical
+formula for reference given below
+
+Step 1:- Import pandas or numpy and decide Gate for the model.
+
+Step 2:- Initialize Input(x1,x2), target(y) and bias(b) and save it.
+
+Step 3:- Create 2 lists (W1,W2) and compute change in weight using formula. 
+
+Step 4:- Compute change in bias using formula and save it in a list.
+
+Step 5:- Create new Weight list (W1new,W2new) and new bias list(bnew).
+
+Step 6: Fill the 3 lists created in step 5 using new weight formula.
+
+
+
+
+
+
+formulas:- weight change = x * y
+           bias change = Y
+           new weight = old weight + weight change  

@@ -1,0 +1,25 @@
+
+Algorithm for Linear Regression:-
+
+Step 1 :- Import the necesary libraries and the given dataset.
+
+Step 2 :- From the given dataset, use the LinearRegression formula to find the slope and y-intercept 
+           and save it in the respective variables.
+
+Step 3 :- Create a small test list (x_test) with your own values and create empty list (y_pred) 
+          to compute its prediction. 
+
+Step 4 :- Using the 2 variables we got in step 2, form an equation of line (Y=mX + b).
+
+Step 5 :- Using the equation, predict the y_pred list for each value in x_test iteratively.
+
+Step 6 :- Plot the Given dataset using scatter chart. 
+
+Step 7 :- In the same chart, plot the regression line y=mx+b formed in step 3.
+
+ 
+
+summary:- Output: - 1. A prediction list (y_pred) with predicted values corresponding to (x_test).
+                    2. A chart showing scatter plot of the dataset and the regression line.     
+
+*Note - sklearn.linearmodel can give us ready made function to fit a best fit line for the dataset                                   

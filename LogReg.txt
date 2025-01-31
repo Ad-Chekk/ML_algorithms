@@ -1,0 +1,37 @@
+Algorithm for logistic regression
+
+Step 1:- Import matplotlib and numpy
+
+Step 2:- Initialize a list - Define n for number of values 
+                           - X1 as float [list] (1st input)
+                           - X2 as float [list] (2nd input)
+                           - can define more variables
+                           - y as float [list]
+         Initialize b0 = 0
+         logistic coefficients b1, b2 =0           
+        (*they are 0 for 1st iteration only)
+
+Step 3:- Initialize a threshold (0.3,0.4,0.6) between 0 and 1 
+
+Step 4:- Create empty list(p) for prediction and fill it 
+         [p=1/1+e^(b0+b1x1+b2x2.....bnxn) use formula]
+
+Step 5:- Create prediction class list(pc) and classify values
+         obtained in Step 4 using threshold 
+
+Step 6:- For 2nd iteration use new biases formula
+         binew = bi - Learning_rate*Gradient(i)
+         Learning_rate = 1
+         Gradient= (0.01, 0.001)                 
+         Note* for each bi, gradient is different 
+
+Step 7:- Compute prediction list and prediction class again 
+         with new b0, b1 and b2 and check how much it is matching 
+         the target (y) 
+
+IMP NOTE* logistic regression uses gradient descent function to calculate new biases and
+therefore at the beginnig they are all initialized as 0 (b0,b1,b2=0)
+this means that in epoch 1, all probabilities will be 0.5. This also means
+that initially all predicted values will be classified into the same class
+
+note* random values can be assigned to b0,b1..bn to get different ouput at each input                                   
